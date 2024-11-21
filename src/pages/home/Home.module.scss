@@ -1,0 +1,174 @@
+@import url('https://fonts.googleapis.com/css2?family=Cookie&family=Fira+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Josefin+Sans:ital,wght@0,100..700;1,100..700&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Mukta:wght@200;300;400;500;600;700;800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "Fira sans", sans-serif;
+}
+.sectionOne{
+    background: url(./assets/slider-show.jpg), no-repeat;
+    background-size: cover;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    .containerOne{
+        width: 40%;
+        display: flex;
+        justify-content: end;
+        .textsOne{
+            display: flex;
+            flex-direction: column;
+            gap: 20px;
+            align-items: start;
+            h2{
+                font-size: 56px;
+                font-weight: 350;
+                color: white;
+            }
+            button{
+                padding: 15px 35px;
+                background-color: white;
+                border: none;
+                border-radius: 5px;
+                font-weight: 500;
+                font-size: 14px;
+                cursor: pointer;
+            }
+        }
+    }
+}
+.services{
+    background-color: #003134;
+    .containerServices{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 70%;
+        margin: 0 auto;
+        gap: 80px;
+        .halfes{
+            display: flex;
+            gap: 80px;
+            .serviceItem{
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                gap: 20px;
+                color: white;
+                padding: 35px 0;
+                svg{
+                    font-size: 35px;
+                }
+            }
+        }
+    }
+}
+.sectionThree{
+    background: url(./assets/banner.jpg), no-repeat;
+    background-size: cover;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    .containerThree{
+        width: 42%;
+        h2{
+            font-size: 100px;
+            color: white;
+            font-style: italic;
+        }
+    }
+}
+.sectionFour{
+    padding: 40px 0;
+    .containerFour{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 20px;
+        .itemCategory{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            text-align: center;
+            gap: 20px;
+            p{
+                width: 70%;
+            }
+            span{
+                text-decoration: underline;
+                font-weight: 500;
+                cursor: pointer;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 1070px) {
+    .services{
+        .containerServices{
+            flex-direction: column;
+            width: 100%;
+            gap: 50px;
+        }
+    }
+}
+@media screen and (max-width: 990px) {
+    .sectionOne{
+        .containerOne{
+            width: 70%;
+        }
+    }
+    .sectionThree{
+        .containerThree{
+            width: 80%;
+        }
+    }
+}
+@media screen and (max-width: 600px) {
+    .sectionOne{
+        .containerOne{
+            width: 100%;
+            justify-content: center;
+        }
+    }
+    .services{
+        .containerServices{
+            gap: 20px;
+            .halfes{
+                flex-direction: column;
+                gap: 20px;
+            }
+        }
+    }
+}
+@media screen and (max-width: 430px) {
+    .sectionOne{
+        .containerOne{
+           .textsOne{
+            h2{
+                font-size: 40px;
+            }
+           }
+        }
+    }
+    .sectionThree{
+        .containerThree{
+            width: 90%;
+            h2{
+                font-size: 70px;
+            }
+        }
+    }
+    .sectionFour{
+        .containerFour{
+            .itemCategory{
+                img{
+                    max-width: 70%;
+                }
+            }
+        }
+    }
+}
