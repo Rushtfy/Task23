@@ -18,6 +18,9 @@ const Header = () => {
     function goWishlist() {
         navigation('/wishlist');
     }
+    function goForm() {
+        navigation('/form');
+    }
 
   return (
     <>
@@ -33,7 +36,7 @@ const Header = () => {
                     <li><a href="">Contact</a></li>
                 </ul>
                 <div className={styles.icons}>
-                    <FontAwesomeIcon icon={faUser}/>
+                    <FontAwesomeIcon icon={faUser} onClick={goForm}/>
                     <FontAwesomeIcon icon={faHeart} onClick={goWishlist}/>
                     <FontAwesomeIcon icon={faCartShopping} onClick={goCart}/>
                     <span className={styles.counter}>0</span>
